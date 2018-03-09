@@ -1,0 +1,136 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+/* ======================  NAVIGATION ====================== */
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+.nav-wrapper {
+  width: 85%;
+}
+
+/* ======================  GLOBAL  ====================== */
+p {
+  line-height: 2rem;
+}
+.page-title {
+  text-align: center;
+  margin: 40px;
+}
+
+/* ======================  HOME  ====================== */
+.button-collapse {
+  color: #26a69a;
+}
+#index-banner {
+  min-height: 580px;
+}
+.header {
+  text-shadow: 0 4px 10px #000;
+  font-weight: 900;
+}
+#apply-button {
+  border-radius: 5px;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+.footer-copyright {
+  text-align: center;
+}
+.connect h5, .connect p {
+  text-align: center;
+}
+
+#welcome {
+  padding: 50px 0;
+}
+
+#welcome p {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+/* ======================  REGISTER / LOGIN  ====================== */
+
+.input-container {
+  max-width: 500px;
+  margin: 150px auto;
+}
+
+select {
+  display: block;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+/* ======================  PROGRAMS  ====================== */
+
+#gray {
+  background-color: #eee;
+  widows: 100%;
+}
+
+.card {
+  padding: 10px;
+}
+
+.card h5 {
+  color: teal;
+  text-align: center;
+}
+
+.card ul:not(.browser-default) > li {
+  list-style-type: circle;
+  margin-left: 30px;
+}
+
+.card span {
+  color: teal;
+}
+
+.card p {
+  margin: 0;
+}

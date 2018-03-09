@@ -1,0 +1,28 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+        <div class="input-container">
+            <h3>Sign Up!</h3>
+
+            <form action="/register" method="POST">
+                <select name="conference" required>
+                    <option value="Georgia-Cumberland" selected>Georgia-Cumberland Conference</option>
+                    <option value="Kentucky-Tennessee">Kentucky-Tennessee Conference</option>
+                    <option value="Carolina">Carolina Conference</option>
+                    <option value="Gulf States">Gulf States Conference</option>
+                    <option value="Florida">Florida Conference</option>
+                </select>
+                <input type="text" name="name" placeholder="Your Full Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="tel" name="phone" placeholder="Phone">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <button class="btn btn-primary btn-lg">Sign Up Now</button>
+            </form>
+            Already signed up? <a href="/login">Login Here!</a>
+        </div>
+    </div>
+</div>
+
+<% include partials/footer %>

@@ -1,0 +1,17 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+        <div class="input-container">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="password">
+                <button class="btn btn-primary btn-lg">Login</button>
+            </form>
+            Haven't created an account yet? <a href="/register">Sign Up Here!</a>
+        </div>
+    </div>
+</div>
+
+<% include partials/footer %>

@@ -1,0 +1,9 @@
+<% include ../partials/header %>
+<div class="container">
+    <h3>Current Users</h3>
+    <% users.forEach(function(user){ %>
+        <p><%= user.username %></p>
+   <% }); %>
+</div>
+
+<% include ../partials/footer %>
