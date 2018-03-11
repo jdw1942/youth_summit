@@ -7,10 +7,11 @@ var express        = require("express"),
     flash          = require("connect-flash"),
     methodOverride = require("method-override"),
     nodemailer     = require("nodemailer"),
-    User           = require("./models/user")
+    User           = require("./models/user"),
+    Story          = require("./models/story")
 
 // REQUIRE ROUTES
-var indexRoutes         = require("./routes/index")
+var indexRoutes = require("./routes/index");
 
 mongoose.connect("mongodb://localhost/youth_summit");
 // mongoose.connect("mongodb://james:JuDuW1942@ds255308.mlab.com:55308/yelp_camp_jdw1942");
@@ -48,10 +49,24 @@ app.use("/", indexRoutes);
 
 
 
+app.get("/about", function(req, res){
+    res.render("about");
+});
 
+app.get("/about/faq", function(req, res){
+    res.render("about/faq");
+});
+
+app.get("/about/new", function(req, res){
+    res.render("about/new");
+});
 
 app.get("/conferences", function(req, res){
     res.render("conferences");
+});
+
+app.get("/conferences/order", function(req,res){
+    res.render("conferences/order");
 });
 
 app.get("/contact", function(req, res){

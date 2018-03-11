@@ -134,3 +134,109 @@ form {
 .card p {
   margin: 0;
 }
+
+/* ======================  ORDER FORM  ====================== */
+
+#mgbk-order h5 {
+  text-align: center;
+  color: teal;
+}
+
+.input-group {
+  display: flex;
+}
+
+#address-group {
+  display: block;
+}
+
+.input-group label {
+  color: black;
+  font-size: 1.1em;
+}
+
+.input-group input {
+  width: 100px;
+  background-color: #eee;
+  text-align: center;
+}
+
+.input-group p {
+  color: teal;
+  text-align: center;
+}
+
+.input-group span {
+  font-weight: 900;
+  font-size: 1.1em;
+}
+
+input[type=number]:not(.browser-default) {
+  width: 100px;
+  margin-left: 30px;
+  background-color: #eee;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+}
+
+input[type=date]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=email]:not(.browser-default){
+  color: slategray;
+  background-color: #eee;
+  text-align: left;
+  padding-left: 10px;
+}
+
+input[type=text]:not(.browser-default){
+  background-color: #eee;
+  text-align: left;
+  padding-left: 10px;
+}
+
+
+[type="radio"]:not(:checked), [type="radio"]:checked {
+  position: relative;
+  opacity: 1;
+  margin-right: 20px;
+  pointer-events: all;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ======================  CREATE STORY POST  ====================== */
+
+textarea {
+  height: auto;
+}
+
+#new-story h3 {
+  text-align: center;
+  color: teal;
+}
+
+#new-story {
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#new-story .card {
+  margin: 0;
+  padding: 30px;
+}
+
+#new-story input[type=text]:not(.browser-default) {
+  width: 50%;
+}
+
+#image_uploads {
+  margin: 20px;
+}
+#new-story label {
+  color: teal;
+  font-size: 1em;
+}

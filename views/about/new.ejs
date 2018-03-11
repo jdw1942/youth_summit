@@ -1,0 +1,41 @@
+<% include ../partials/header %>
+
+<div id="new-story">
+    <div class="contaier">
+        <div class="row">
+            <div class="container">
+                <div class="card">
+                    <h3>Create a New Story Post</h3>
+                    <form action="/about/stories" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="text" name="title" placeholder="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="image_uploads">Choose image to upload (PNG, JPG)</label>
+                            <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png">
+                        </div>
+                        <div class="preview">
+                            
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" name="description" cols="50" rows="20" placeholder="description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn right waves-effect waves-light lighten-1">Submit Story</button>
+                        </div>
+                    </form>
+                        <a href="/stories">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    
+
+</script>
+
+
+<% include ../partials/footer %>

@@ -1,0 +1,439 @@
+<% include ../partials/header %>
+<div class="container">
+    <div class="row">
+        <div class="container">
+            <h4>Magabook Order Form</h4>
+            <p>Enter number of cases you need for each title. The total books will be calculated automatically and displayed below.</p>
+            <form id="mgbk-order" action="">
+                <hr>
+                <h5>English Books</h5>
+                <hr>
+                <div class="input-group">
+                    <label class="col s6" for="ga">#35 - God's Answers (58)</label>
+                    <input class="col s2" id="ga" type="number" name="ga" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="ga-result">0</span></strong></p>    
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="hf">#38 – History of Freedom (30)</label>
+                    <input class="col s2" id="hf" type="number" name="hf" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="hf-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="hh">#43 – Health and Happiness (MH)</label>
+                    <input class="col s2" id="hh" type="number" name="hh" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="hh-result">0</span></strong></p>
+                </div>
+                <div class="input-group">
+                    <label class="col s6" for="sop">#68 – In Search of Peace (PAS) (56)</label>
+                    <input class="col s2" id="sop" type="number" name="sop" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="sop-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="mff">#59 – My Forever Friend (MFJ)</label>
+                    <input class="col s2" id="mff" type="number" name="mff" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="mff-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="nt">#64 – New Testament Adventures (PP)</label>
+                    <input class="col s2" id="nt" type="number" name="nt" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="nt-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="ot">#65 – Old Testament Adventures (RH)</label>
+                    <input class="col s2" id="ot" type="number" name="ot" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="ot-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="hd">#10 – Hope and Happiness (HD) (100) </label>
+                    <input class="col s2" id="hd" type="number" name="hd" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="hd-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6"for="fdf">#30 – Fighting Disease with Food (24)</label>
+                    <input class="col s2" id="fdf" type="number" name="fdf" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="fdf-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="bh">#17 – Bountiful Health Cookbook</label>
+                    <input class="col s2" id="bh" type="number" name="bh" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="bh-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="bwl">#17 – Better Way of Life Cookbook</label>
+                    <input class="col s2" id="bwl" type="number" name="bwl" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="bwl-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="sb">#78 – Something Better Cookbook </label>
+                    <input class="col s2" id="sb" type="number" name="sb" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="sb-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="sf">#76 – Simply Fresh Cookbook (18)</label>
+                    <input class="col s2" id="sf" type="number" name="sf" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="sf-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label  class="col s6" for="tdvd">#85 – Theodicy DVD (100)</label>
+                    <input class="col s2" id="tdvd" type="number" name="tdvd" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="tdvd-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="ahdvd">#02 – Ancient Health DVD (30)</label>
+                    <input class="col s2" id="ahdvd" type="number" name="ahdvd" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="ahdvd-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="eldvd">#28 – Eight Laws DVD (30)</label>
+                    <input class="col s2" id="eldvd" type="number" name="eldvd" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="eldvd-result">0</span></strong></p>
+                </div>
+                <hr>
+                <h5>Spanish Books</h5>
+                <hr>
+                
+                <div class="input-group">
+                    <label class="col s6" for="spn-ga">#1035 – SPN – God's Answers (58) </label>
+                    <input class="col s2" id="spn-ga" type="number" name="spn-ga" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="spn-ga-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="spn-sop">#1068 -SPN – In Search of Peace (20) </label>
+                    <input class="col s2" id="spn-sop" type="number" name="spn-sop" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="spn-sop-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label  class="col s6" for="spn-hf">#1038 – SPN – History of Freedom (26)</label>
+                    <input class="col s2" id="spn-hf" type="number" name="spn-hf" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="spn-hf-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="spn-nt">#1064 – SPN – New Testament Adventures (30)</label>
+                    <input class="col s2" id="spn-nt" type="number" name="spn-nt" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="spn-nt-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="spn-hd">#1010 – SPN – Hope and Happiness (100)</label>
+                    <input class="col s2" id="spn-hd" type="number" name="spn-hd" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="spn-hd-result">0</span></strong></p>
+                </div>
+
+                <div class="input-group">
+                    <label class="col s6" for="spn-fdf">#1030 – SPN – Fighting Disease with Food (30)</label>
+                    <input class="col s2" id="spn-fdf" type="number" name="spn-fdf" placeholder="0"> 
+                    <p class="col s4">Total: <strong><span id="spn-fdf-result">0</span></strong></p>
+                </div>
+                
+                <hr>
+                    <h5>Shipping Details</h5>
+                <hr>
+
+                <div>
+                    <input id="ship" type="radio" name="ship">Please Ship Books to Program Location</input>
+                </div>
+                <div>
+                    <input id="pickup" type="radio" name="ship">Someone will pick up books from HHES</input>
+                </div>
+
+                <hr>
+                <div id="pickup-group" class="hidden">
+                    <div class="input-group">
+                            <div class="col s6">
+                                <label for="pickup-date">Pick-Up Date</label>
+                                <input type="date" id="puckup-date" name"pickup-date" placeholder="Date">
+                            </div>
+                            <div class="col s6">
+                                <label for="pickup-name">Who is Picking up the Books? </label>
+                                <input type="text" id="puckup-name" name"pickup-name" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <hr>
+                </div>
+                    
+                <div id="ship-group" class="hidden">
+                    <div class="input-group" >
+                            <div class="col s6">
+                                <label for="early-delivery">Earliest Possible Delivery Date</label>
+                                <input type="date" id="early-delivery" name"early-delivery" placeholder="Date">
+                            </div>
+                            <div class="col s6">
+                                <label for="ealy-deliver">Latest Possiblie Deliver Date</label>
+                                <input type="date" id="ealy-deliver" name"ealy-deliver" placeholder="MM/DD/YYY">
+                            </div>
+                        </div>
+
+                    <div>
+                        <label for="church-name">Church / School Name</label>
+                        <input type="text" id="church-name" name"church-name" placeholder="Church/School">
+                    </div>
+                    <div class="input-group">
+                        <div class="col s6">
+                            <label for="contact-name">Contact Name</label>
+                            <input type="text" id="contact-name" name"contact-name" placeholder="Full Name">
+                        </div>
+                        <div class="col s6">
+                            <label for="contact-phone">Contact Phone</label>
+                            <input type="tel" id="contact-phone" name"contact-phone" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="col s6">
+                            <label for="second-phone">Secondary Phone</label>
+                            <input type="tel" id="second-phone" name"second-phone" placeholder="Phone">
+                        </div>
+                        <div class="col s6">
+                            <label for="contact-email">Contact Email</label>
+                            <input type="email" id="contact-email" name"contact-email" placeholder="Email">
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div id="address-group" class="input-group">
+                        <div class="row">
+                        <div class="col s12">
+                            <label for="street">Street Address</label>
+                            <input type="text" id="street" name"street" placeholder="Address">
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col s6">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name"city" placeholder="Address">
+                        </div>
+                        <div class="col s2">
+                            <label for="state">State</label>
+                                <select name="state" id="state">
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                        </div>
+                        <div class="col s4">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" name"zip" placeholder="Zip">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn right waves-effect waves-light lighten-1">Submit Order</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+        //english books
+        var ga = document.getElementById("ga");
+        var hf = document.getElementById("hf");
+        var hh = document.getElementById("hh");
+        var sop = document.getElementById("sop");
+        var mff = document.getElementById("mff");
+        var nt = document.getElementById("nt");
+        var ot = document.getElementById("ot");
+        var hd = document.getElementById("hd");
+        var fdf = document.getElementById("fdf");
+        var bwl = document.getElementById("bwl");
+        var sb = document.getElementById("sb");
+        var sf = document.getElementById("sf");
+        var tdvd = document.getElementById("tdvd");
+        var ahdvd = document.getElementById("ahdvd");
+        var eldvd = document.getElementById("eldvd");
+        //spanish books
+        var spnGa = document.getElementById("spn-ga");
+        var spnSop = document.getElementById("spn-sop");
+        var spnHf = document.getElementById("spn-hf");
+        var spnNt = document.getElementById("spn-nt");
+        var spnHd = document.getElementById("spn-hd");
+        var spnFdf = document.getElementById("spn-fdf");
+
+        var result = 0;
+
+        ga.addEventListener("keyup", function(){
+         result = ga.value * 58;
+         document.getElementById("ga-result").innerHTML = result;
+        });
+        hf.addEventListener("keyup", function(){
+         result = hf.value * 30;
+         document.getElementById("hf-result").innerHTML = result;
+        });
+        hh.addEventListener("keyup", function(){
+         result = hh.value * 20;
+         document.getElementById("hh-result").innerHTML = result;
+        });
+        sop.addEventListener("keyup", function(){
+         result = sop.value * 56;
+         document.getElementById("sop-result").innerHTML = result;
+        });
+        mff.addEventListener("keyup", function(){
+         result = mff.value * 20;
+         document.getElementById("mff-result").innerHTML = result;
+        });
+        nt.addEventListener("keyup", function(){
+         result = nt.value * 20;
+         document.getElementById("nt-result").innerHTML = result;
+        });
+        ot.addEventListener("keyup", function(){
+         result = ot.value * 20;
+         document.getElementById("ot-result").innerHTML = result;
+        });
+        hd.addEventListener("keyup", function(){
+         result = hd.value * 20;
+         document.getElementById("hd-result").innerHTML = result;
+        });
+        fdf.addEventListener("keyup", function(){
+         result = fdf.value * 24;
+         document.getElementById("fdf-result").innerHTML = result;
+        });
+        bh.addEventListener("keyup", function(){
+         result = bh.value * 20;
+         document.getElementById("bh-result").innerHTML = result;
+        });
+        bwl.addEventListener("keyup", function(){
+         result = bwl.value * 20;
+         document.getElementById("bwl-result").innerHTML = result;
+        });
+        sb.addEventListener("keyup", function(){
+         result = sb.value * 20;
+         document.getElementById("sb-result").innerHTML = result;
+        }); 
+        sf.addEventListener("keyup", function(){
+         result = sf.value * 18;
+         document.getElementById("sf-result").innerHTML = result;
+        });
+        tdvd.addEventListener("keyup", function(){
+         result = tdvd.value * 100;
+         document.getElementById("tdvd-result").innerHTML = result;
+        });
+        ahdvd.addEventListener("keyup", function(){
+         result = ahdvd.value * 30;
+         document.getElementById("ahdvd-result").innerHTML = result;
+        });
+        eldvd.addEventListener("keyup", function(){
+         result = eldvd.value * 30;
+         document.getElementById("eldvd-result").innerHTML = result;
+        }); 
+       
+        //spanish
+        spnGa.addEventListener("keyup", function(){
+         result = spnGa.value * 56;
+         document.getElementById("spn-ga-result").innerHTML = result;
+        });
+        spnSop.addEventListener("keyup", function(){
+         result = spnSop.value * 20;
+         document.getElementById("spn-sop-result").innerHTML = result;
+        }); 
+        spnHf.addEventListener("keyup", function(){
+         result = spnHf.value * 26;
+         document.getElementById("spn-hf-result").innerHTML = result;
+        });
+        spnNt.addEventListener("keyup", function(){
+         result = spnNt.value * 20;
+         document.getElementById("spn-nt-result").innerHTML = result;
+        });
+        spnHd.addEventListener("keyup", function(){
+         result = spnHd.value * 100;
+         document.getElementById("spn-hd-result").innerHTML = result;
+        });
+        spnFdf.addEventListener("keyup", function(){
+         result = spnFdf.value * 40;
+         document.getElementById("spn-fdf-result").innerHTML = result;
+        }); 
+        
+// Hide / Show Shipping Options ===========================================
+
+        var pickupGroup = document.getElementById("pickup-group");
+        var shipGroup   = document.getElementById("ship-group");
+        var pickup      = document.getElementById("pickup");
+        var ship        = document.getElementById("ship");
+
+        ship.addEventListener("click", function(){
+            pickupGroup.classList.add("hidden");
+            shipGroup.classList.remove("hidden");
+        });
+
+        pickup.addEventListener("click", function(){
+            pickupGroup.classList.remove("hidden");
+            shipGroup.classList.add("hidden");
+        });
+
+</script>
+
+<% include ../partials/footer %>
+<!-- 
+var caseQty = document.getElementsByClassName("case");
+var result = 0;
+
+for(var i = 0; i < caseQty.length; i++){
+    caseQty[i].addEventListener("keyup", function(){
+        result = caseQty[i].value * 58;
+        document.getElementsByTagName("span").innerHTML = result;
+    });
+} -->
