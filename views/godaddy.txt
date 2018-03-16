@@ -1,0 +1,3 @@
+Instructions for accessing godaddy
+
+$ ssh -l napadesign nirogijeewan.com -p 22

@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 
 var StorySchema = new mongoose.Schema({
     title: String,
-    image: File,
+    image: String,
     desc: String,
     author: {
         id: {

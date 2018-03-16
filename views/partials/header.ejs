@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 <body>
     <ul id="dropdown1" class="dropdown-content">
@@ -16,7 +17,9 @@
         <li class="divider"></li>
         <li><a href="/about/faq">FAQ</a></li>
         <li class="divider"></li>
-        <li><a href="/stories">STORIES</a></li>
+        <li><a href="/about/contact">CONTACT US</a></li>
+        <li class="divider"></li>        
+        <li><a href="/about/stories">STORIES</a></li>
     </ul>
   <nav class="white navbar-fixed" role="navigation">
     <div class="nav-wrapper container">
@@ -25,9 +28,16 @@
         <li><a href="/">HOME</a></li>
         <li><a class="dropdown-button" href="#!" data-activates="dropdown1">ABOUT<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a href="/programs">PROGRAMS</a></li>
-        <li><a href="#">APPLY</a></li>
+        <li><a href="/apply">APPLY</a></li>
         <li><a href="#">DONATE</a></li>
-        <li><a href="/login">LOGIN</a></li>
+        <% if(!currentUser){ %>
+          <li><a href="/login">LOGIN</a></li>
+        <% } else { %>
+          <li><a href="/logout">SIGN OUT</a></li>
+          <li><a href="/profile">VIEW PROFILE</a></li>
+
+       <% } %>
+        
 
       </ul>
 
@@ -44,3 +54,17 @@
     </div>
   </nav>
   
+  <div class="container">
+      <% if(error && error.length > 0) { %>
+      <div class="alert alert-danger">
+          <%= error %>
+      </div>
+      <% } %>
+  </div>
+  <div class="container">
+      <% if(success && success.length > 0) { %>
+      <div class="alert alert-success">
+          <%= success %>
+      </div>
+      <% } %>
+  </div>

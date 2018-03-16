@@ -1,0 +1,285 @@
+<% include partials/header %>
+<style>
+    .input-group {
+        display: block;
+    }
+
+    input, select {
+        margin-bottom: 30px;
+    }
+    label {
+        margin-bottom: 10px;
+    }
+    input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+        background-color: white;
+    }
+    hr {
+        margin: 30px auto;
+    }
+
+    #dob-day, #dob-month, #dob-year {
+        width: 29%;
+        display: inline;
+        text-align: center;
+    }
+    #age {
+        margin-left: 0;
+    }
+
+</style>
+<div class="container">
+    <div class="row">
+        <div class="container white-section teal lighten-4">
+            <h4>Youth Summit Application</h4>
+            <p>When you’re ready to apply, simply fill out the application below and we’ll get back to you shortly!</p>
+            <p><strong>Note:</strong> All fields are required unless you don’t meet a stated conditional (such as being over 18 and not needing parental approval).</p>
+            <p>If you have any trouble filling out this form, please email <a href="mailto:magabook@hhesbiblestory.com">magabook@hhesbiblestory.com</a>.</p>
+            <form id="mgbk-order" action="">
+                <h5>About You</h5>
+                <hr>
+                <div class="input-group">
+                    <label class="col s12" for="conference">Which conference do you want to work in?</label>
+                    <select class="col s12" name="conference" id="conference">
+                        <option value="Carolina">Carolina</option>
+                        <option value="Carolina">Florida</option>
+                        <option value="Carolina">Georgia-Cumberland</option>
+                        <option value="Carolina">Gulf States/option>
+                        <option value="Carolina">Kentucky-Tennessee</option>
+                        <option value="Carolina">I am open. Suprise Me!</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <div class="col s6">
+                        <input type="text" id="fname" name"fname" placeholder="First Name">
+                    </div>
+                    <div class="col s6">
+                        <input type="text" id="lname" name"lname" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label class="col s12" for="dob">Birth Date</label>
+                    <select clas="col s4" name="dob" id="dob-day">
+                            <option value="">Day</option>
+                            <option value="">---</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                          </select>
+                          <select clas="col s4" name="dob" id="dob-month">
+                            <option value="">Month</option>
+                            <option value="">-----</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                          </select>
+                          <select clas="col s4" name="dob" id="dob-year">
+                            <option value="">Year</option>
+                            <option value="">----</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                          </select>
+                </div>
+
+                <div class="input-group" >
+                    <div class="col s6">
+                        <label for="age">Age at the time of application</label>
+                        <input type="number" id="age" name"age" placeholder="Your Age">
+                    </div>
+                    <div class="col s6">
+                        <label for="marital">Marital Status</label>
+                        <select name="marital" id="marital">
+                            <option value="">Select An Option</option>
+                            <option value="">-----</option>
+                            <option value="01">Single</option>
+                            <option value="02">Married</option>
+                            <option value="03">Separated</option>
+                            <option value="04">Divorced</option>
+                            <option value="05">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="address-group" class="input-group">
+                    <div class="col s12">
+                        <label for="street">Street Address</label>
+                        <input type="text" id="street" name"street" placeholder="Address">
+                    </div>
+                    <div class="col s6">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name"city" placeholder="Address">
+                    </div>
+                    <div class="col s2">
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </div>
+                    <div class="col s4">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name"zip" minlength="5" maxlength="10"  >
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="col s6">
+                        <label for="cell">Cell Phone</label>
+                        <input class="phone" type="tel" id="cell" name"cell" placeholder="(___) ___-____">
+                    </div>
+                    <div class="col s6">
+                        <label for="home-phone">Home Phone</label>
+                        <input class="phone" type="tel" id="home-phone" name"home-phone" placeholder="(___) ___-____">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="col s6">
+                        <label for="contact-email">Contact Email</label>
+                        <input type="email" id="contact-email" name"contact-email" placeholder="Email">
+                    </div>
+                </div>
+
+                    <hr>
+                    <h5>References</h5>
+                    <hr> 
+                <button type="submit" class="btn right waves-effect waves-light lighten-1">Submit Order</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // phone number validation
+    var phoneMask = document.getElementsByClassName('phone');
+    for(var i = 0; i < phoneMask.length; i++){
+        phoneMask[i].addEventListener('input', function (e) {
+            var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+        });
+    }
+    // zip code validation
+    $(document).ready(function() {
+        $("#zip").keydown(function (e) {
+            // Allow: backspace, delete, tab, escape, enter, dash, and .
+            if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190, 189]) !== -1 ||
+                // Allow: Ctrl+A, Command+A
+                (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) || 
+                // Allow: home, end, left, right, down, up
+                (e.keyCode >= 35 && e.keyCode <= 40)) {
+                    // let it happen, don't do anything
+                    return;
+            }
+            // Ensure that it is a number and stop the keypress
+            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                e.preventDefault();
+            }
+        });
+});
+
+</script>
+
+<% include partials/footer %>

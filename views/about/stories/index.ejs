@@ -1,0 +1,40 @@
+<% include ../../partials/header %>
+<main>   
+    <div id="gray">
+        <div class="container">
+            <div class="section">
+                <h4 class="page-title">Stories From the Field</h4>
+            </div>
+        </div>
+        <div class="container">
+                <div class="row flex">
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <img class="responsive-img" src="../../../img/gas-station.jpg" alt="">
+                            <h5>Gas Station Grace</h5>
+                            <p>I was at a gas station and I hadn’t distributed a single book in two hours.  Through faith and prayer I asked for the Lord to bring me to those who are seeking Him.<span> Read more...</span></p>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <img class="responsive-img" src="../../../img/bus-stop.jpg" alt="">
+                            <h5>Waiting for the Bus</h5>
+                            <p>I was at a gas station and I hadn’t distributed a single book in two hours.  Through faith and prayer I asked for the Lord to bring me to those who are seeking Him.<span> Read more...</span></p>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <img class="responsive-img" src="../../../img/gas-station.jpg" alt="">
+                            <h5>Gas Station Grace</h5>
+                            <p>I was at a gas station and I hadn’t distributed a single book in two hours.  Through faith and prayer I asked for the Lord to bring me to those who are seeking Him.<span> Read more...</span></p>
+                        </div>
+                    </div>
+                    <% if(currentUser){ %>
+                        <a class="btn" href="/about/stories/new">New Story</a>
+                   <% } %>
+                </div>
+        </div>
+    </div>
+</main>     
+
+<% include ../../partials/footer %>
